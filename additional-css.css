@@ -1,0 +1,445 @@
+/* - - - - - - - - - - - -
+ Start - Global Changes
+- - - - - - - - - - - - */
+
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/* - - - Links styling - - - */
+
+a:link {
+	color: DodgerBlue;
+}
+
+a:visited {
+	color: DodgerBlue;
+}
+
+.navigation-top .current_page_item>a {
+	/* active link on main menu */
+	color: #000000;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.navigation-top a:hover,
+.navigation-top a:focus {
+	color: #000;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* - - - Footer - remove hr, reduce padding, decrease text size, and remove white line from menu text - - - */
+
+.site-footer .widget ul li,
+.widget ol li {
+	border-bottom: 0;
+	border-top: 0;
+	padding: 0.5em 0;
+	font-size: 0.85rem;
+}
+
+.widget ul li a,
+.site-footer .widget-area ul li a,
+.site-footer .widget-area ul li a {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.site-info {
+	/* remove default wp footer text */
+	display: none;
+}
+
+.site-footer {
+	/* background color for FOOTER */
+	background-color: #CFCFCF;
+}
+
+
+/* - - - Modify width of page header div - text to full width - - - */
+
+body.page-two-column:not(.archive) #primary .entry-header,
+body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
+	width: 100%;
+}
+
+#primary .entry-content {
+	/* All Pages - modify to full width */
+	width: 100% !important;
+}
+
+#primary article {
+	/* All Posts - modify to full width */
+	width: 100% !important;
+}
+
+.site-header .navigation-top .menu-scroll-down {
+	/* Main Menu - Change color of down arrow on nav */
+	color: DodgerBlue;
+}
+
+h1.entry-title {
+	/* All H1 & H2 - change font and styling for entry text on all Pages and Posts */
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 3rem !important;
+	text-transform: none !important;
+	letter-spacing: -0.5px!important;
+	line-height: 1em;
+}
+
+h2.page-title {
+	/* All H1 & H2 - change font and styling for entry text on all Pages and Posts */
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 3rem !important;
+	text-transform: none !important;
+	letter-spacing: 0px!important;
+}
+
+body.has-header-image .site-title,
+body.has-header-image .site-title a {
+	/*  Title michaelrinella.com - change font and styling */
+	color: #FFF;
+	font-family: 'Alfa Slab One', cursive;
+	letter-spacing: 0.1rem;
+	font-size: 3rem;
+	text-transform: none;
+	font-weight: 400;
+	text-shadow: 0 0 0.35rem #333333;
+}
+
+.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+	height: 20vh;
+}
+
+.site-content {
+	/* ll Headers Tightens up the spacing between the entry header text and the main menu  */
+	padding: 2.5em 0 0;
+}
+
+.post-thumbnail a img {
+	/* Size and format thumbnail image on Posts */
+	width: 25%;
+	float: left;
+	margin-right: 2em;
+}
+
+
+/* - - - Change button color for contact form - - - */
+
+.wpforms-form input[type="submit"],
+div.wpforms-container-full .wpforms-form button[type="submit"],
+div.wpforms-container-full .wpforms-form .wpforms-page-button {
+	background-color: dodgerblue;
+	border: 1px solid dodgerblue;
+	color: white;
+	font-size: 1rem;
+	padding: 10px 15px;
+}
+
+.wpforms-form input[type="submit"],
+div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
+	background-color: dodgerblue;
+	border: 1px solid dodgerblue;
+	cursor: pointer;
+	color: black;
+}
+
+.wpforms-confirmation-container-full {
+	color: white;
+	margin: 0 0 24px 0;
+	background: dodgerblue;
+	border: dodgerblue;
+	padding: 15px 15px;
+}
+
+#formRinella {
+	background: #FFFFFF;
+	padding: 2em;
+	margin-top: 3em;
+	margin-bottom: 2em;
+}
+
+.fa-link {
+	/* sketch and github icons for portfolio and post pages */
+	font-size: 2rem;
+	text-decoration: none;
+}
+
+.site-content-contain {
+	background-color: #F5F5F5;
+}
+
+.white__background {
+	background-color: #FFFFFF;
+	outline: none;
+}
+
+.type-post {
+	background-color: #FFFFFF;
+	padding: 2em;
+}
+
+
+/* - - - - - - - - - - - -
+ End - Global Changes
+- - - - - - - - - - - - */
+
+
+/* - - - format section text on Portfolio page - - - */
+
+.current-project-title {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.75rem;
+	font-weight: 400;
+	opacity: .6;
+	margin: .75em .75em;
+	text-transform: uppercase;
+}
+
+.current-project-title strong {
+	font-weight: 700;
+}
+
+.aboutme-card-component-img {
+	/* format image on About Me page */
+	margin-bottom: 0;
+}
+
+.component__padding {
+	padding: 2em;
+}
+
+.component__padding-med {
+	padding: 1.25em 2em 1.25em 2em;
+}
+
+
+/* - - - - - - - - - - - -
+ Start - Media Queries
+- - - - - - - - - - - - */
+
+@media screen and (max-width: 800px) {
+	.has-header-image .custom-header-media img,
+	.custom-header-media img {
+		height: auto;
+		left: 0;
+		max-width: 100%;
+		min-height: 0;
+		-o-object-fit: unset;
+		object-fit: unset;
+		position: relative;
+		-ms-transform: none;
+		-webkit-transform: none;
+		transform: none;
+	}
+	.home.blog.has-header-image .custom-header-media {
+		height: 45vh;
+	}
+	.has-header-image.home.blog .custom-header {
+		height: 30vh;
+	}
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+		height: 12vh;
+	}
+	body.has-header-image .site-title {
+		margin-bottom: -20px;
+	}
+	svg.icon.icon-arrow-right {
+		display: none;
+	}
+	/* - - - Mobile Menu no display at 800px, dislay at 767px, align left, uppercase - - - */
+	.js .menu-toggle {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	/* All H1 & H2 - change font and styling for entry text on all Pages and Posts, monbile */
+	h1.entry-title {
+		font-size: 2.5rem !important;
+	}
+	h2.page-title {
+	font-size: 2.5rem !important;
+	}
+	.home.blog.has-header-image .custom-header-media {
+		height: 50vh;
+	}
+	.has-header-image.home.blog .custom-header {
+		height: 35vh;
+	}
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+		height: 15vh;
+	}
+	body.has-header-image .site-title {
+		margin-bottom: -20px;
+	}
+	#top-menu,
+	#menu-main-nav li {
+		font-size: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/* - - - Mobile Menu dislay at 767px, align left, text is uppercase - - - */
+	.js .menu-toggle {
+		display: block;
+		margin-left: 14px;
+		text-transform: uppercase;
+	}
+}
+
+
+/* Media - fix header for sizes between mobile and ipad */
+
+@media screen and (max-width: 767px) and (min-width: 415px) {
+	.home.blog.has-header-image .custom-header-media {
+		height: 30vh;
+	}
+	.has-header-image.home.blog .custom-header {
+		height: 30vh;
+	}
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+		height: 14vh;
+	}
+	
+	/* - - - style for mobile menu - - - */
+	
+		#top-menu,
+	#menu-main-nav li {
+		font-family: 'Raleway', sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+	}
+	.navigation-top {
+		background: #000;
+		border: none;
+	}
+	.menu-toggle {
+		color: #FFF;
+		background-color: #000;
+		margin: 0 auto 2px;
+	}
+	.main-navigation.toggled-on {
+		background-color: #000;
+	}
+}
+@media screen and (max-width: 600px) {
+		body.has-header-image .site-title a {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	/* resize margin for site-title text, for inbetween sizes */
+	body.has-header-image .site-title
+	{
+    margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+/* All H1 & H2 - change font and styling for entry text on all Pages and Posts, monbile */
+	h1.entry-title {
+		font-size: 2rem !important;
+	}
+	h2.page-title {
+	font-size: 2rem !important;
+	}
+	.home.blog.has-header-image .custom-header-media {
+		/* Image size for home page, mobile */
+		height: 30vh;
+	}
+	.has-header-image.home.blog .custom-header {
+		/* Image size for home page, mobile */
+		height: 25vh;
+	}
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+		/* turn off image for all pages excluding Home Page, mobile */
+		display: none;
+	}
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .site-branding {
+		/* turn off site branding text for all pages excluding Home Page, mobile */
+		display: none;
+	}
+	.home.blog.has-header-image .custom-header-media,
+	.home.blog.has-header-video .custom-header-media {
+		height: auto;
+	}
+	body.has-header-image .site-title {
+		margin-bottom: auto;
+	}
+	.aboutmeheaderImg {
+		width: 100%;
+		height: auto;
+		display: block;
+		margin-bottom: 1.5em;
+	}
+	button.menu-toggle {
+		/* change font and text to uppercase, mobile */
+		font-family: 'Roboto', sans-serif;
+		text-transform: uppercase;
+	}
+	.page-header {
+		/* remove padding under page header and margin above header text, mobile */
+		margin-top: -1em;
+		padding-bottom: 0;
+	}
+	.site-footer .widget ul li,
+	.widget ol li {
+		/* enlarge footer text, mobile*/
+		font-size: 0.9rem;
+	}
+	.post-thumbnail a img {
+		/* size and format thumbnail image on Posts, mobile  */
+		width: 100%;
+		margin-bottom: 2em;
+	}
+	.current-project-title {
+		/* smaller text for mobile */
+		font-size: 1.15rem;
+	}
+	#top-menu,
+	#menu-main-nav li {
+		font-family: 'Raleway', sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+	}
+	.navigation-top {
+		background: #000;
+		border: none;
+	}
+	.menu-toggle {
+		color: #FFF;
+		background-color: #000;
+		margin: 0 auto 2px;
+	}
+	.main-navigation.toggled-on {
+		background-color: #000;
+	}
+	
+	/* important removes the stubborn background on the menu toggle for mobile */
+	.menu-toggle:hover,
+	.menu-toggle:focus {
+		background-color: #000!important;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		outline: none;
+	}
+	/*body.has-header-image .site-title a {
+		font-size: 2rem;
+	}*/
+}
+
+@media screen and (max-width: 375px) {
+	body.has-header-image .site-title a {
+		font-size: 1.5rem;
+	}
+	.home.blog.has-header-image .custom-header-media,
+	.home.blog.has-header-video .custom-header-media {
+		height: auto;
+	}
+}
